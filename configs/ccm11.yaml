@@ -1,0 +1,119 @@
+extract:
+  brkdown_database: CCM11
+  brkdown_table: BREAKDOWN
+  cdc: DATETIME
+  connect: DIP2
+  database: CCM11
+  last_ccm_date: '2025-09-01 11:16:29'
+  brk_last_data_updated: '2022-01-01 10:10:10'
+  last_sr_no: 0
+  table: Table_1
+identifier: ccm11
+load:
+  brkdown_load_type: full_load
+  brkdown_table: t_ccm11_breakdown
+  last_data_updated: '2022-01-01 10:10:10'
+  load_type: incremental_load
+  table: t_ccm11
+transform:
+  brkdown_rename_columns:
+    BREAKDOWN: Breakdown_Dept
+    DATETIME: ccm_date
+    End_Time: End_Time
+    SHIFT: shift
+    Start_Time: Start_Time
+  date_format: '%Y-%m-%d %H:%M:%S'
+  date_transform: 'yes'
+  old_date_format: '%d-%m-%Y %H:%M:%S'
+  rename: 'yes'
+  rename_columns:
+    Barrel_Down_Time: ccm_barrel_down_time
+    Barrel_Speed1: Barrel_Speed1
+    Barrel_Speed2: Barrel_Speed2
+    Barrel_Speed3: Barrel_Speed3
+    Boggi_Speed1: Boggi_Speed1
+    Boggi_Speed1_Position: Boggi_Speed1_Position
+    Boggi_Speed2: Boggi_Speed2
+    Boggi_Speed2_Position: Boggi_Speed2_Position
+    Boggi_Speed3: Boggi_Speed3
+    Boggi_Speed3_Position: Boggi_Speed3_Position
+    Boggi_Speed4: Boggi_Speed4
+    Boggi_Speed4_Position: Boggi_Speed4_Position
+    Boggi_Speed5: Boggi_Speed5
+    Boggi_Speed5_Position: Boggi_Speed5_Position
+    CCM_Down_Current: ccm_down_current
+    CCM_Up_Current: ccm_up_current
+    CCM_Up_Time: ccm_up_time
+    Casting_Time: Casting_time
+    Cooling_Speed: cooling_rpm
+    Cooling_Time: cooling_time
+    Core_Loader_In: Core_Loader_In
+    Core_Loader_Out: Core_Loader_Out
+    Cycle_Time: CCM_CycleTime
+    DATETIME: ccm_date
+    DN: dia
+    Extractor_Back_High_Speed: Extractor_back_high_speed
+    Extractor_Back_Slow_Speed: Extractor_Back_slow_speed
+    Extractor_Backward_Current: Extractor_Backward_Current
+    Extractor_Forward_Current: Extractor_Forward_Current
+    Extractor_In_Time: Extractor_IN_time
+    Extractor_JAW_Close_Position: Extractor_JAW_close_position
+    Extractor_JAW_Expansion_Position: Extractor_JAW_expansion_position
+    Hopper_Speed1: Hopper_speed1
+    Hopper_Speed1_Time: Hopper_speed_time
+    Hopper_Speed2: Hopper_speed2
+    Hopper_Speed2_Time: Hopper_Speed2_Time
+    Hopper_Speed3: Hopper_speed3
+    Hopper_Speed3_Time: Hopper_Speed3_Time
+    Inlet_Water_Temperature: inlet_water_temp
+    Inoculation_OFF_Position: Innoculation_off_position
+    Inoculation_ON_Position: Innoculation_on_position
+    Inoculation_Speed: innoculation_rpm
+    Inoculation_Taking_Time: Innoculation_Taking_Time
+    L_Mould_Powder_Speed: A_mould_powder_rpm
+    L_Mould_Powder_Start_Position: L_Mould_Powder_Start_Position
+    L_Mould_Powder_Stop_Position: L_Mould_Powder_Stop_Position
+    L_Runner_Distance: A_Runner_distance
+    Laddle_Angle: ladle_angle
+    Lifter_Down_Current: Lifter_down_current
+    Lifter_Up_Current: lifter_up current
+    Matel_Flow_Time_Chute_To_Socket: METAL_FLOW_TIME_FAIL_CHUTE_TO_SOCKET
+    Mould_Number: Mould_number
+    Mould_Powder_Running_Time: Mould_Powder_Running_Time
+    Mould_Rotate_Current: Mould_Rotate_Current
+    Operator_Name: Operator_Name
+    Outlet_Water_Temperature: outlet_water_temp
+    PPH: pph
+    Pipe_Class: Pipe_Class
+    Pipe_Dia: Pipe_Dia
+    Pipe_Length: Pipe_Length
+    Pipe_Lowering_Arm_Fast_Speed: Pipe_lowering_arm_high_speed
+    Pipe_Lowering_Arm_Slow_Speed: Pipe_lowering_arm_slow_speed
+    Pipe_No_Per_Hopper: Pipe_No_Per_Hopper
+    Pipe_Weight_Actual: Actual_pipe_weight
+    Pipe_Weight_Nominal: Pipe_Weight_Nominal
+    R_Mould_Powder_Speed: B_mould_powder_rpm
+    R_Mould_Powder_Start_Position: R_Mould_Powder_Start_Position
+    R_Mould_Powder_Stop_Position: R_Mould_Powder_Stop_Position
+    R_Runner_Distance: B_Runner_distance
+    Rotary_Fast_RPM: Rotary_High_RPM
+    Rotary_Slow_RPM: Rotary_slow_RPM
+    Runner_Shifting_Time: Runner_shifting_time
+    Runner_Tilting_Time: Runner_tilting_time
+    SAP_UPDATE: SAP_UPDATE
+    SHIFT: Shift
+    Sleeve_Number: DELETED
+    Sleeve_Pipe_Count: Sleeve_Number
+    Slow_Speed: Slow_rpm
+    Socket_Filling_Time: Socket_Filling_Time
+    Socket_Speed: Socket_rpm
+    Spigot_Speed: Spigot_rpm
+    Water_FLow_Totalizer: water_flow_qty
+    Water_Flow_Inlet: Water_Flow_Inlet
+    Water_Flow_Socket: Water_Flow_Socket
+    Water_Flow_Spigot: Water_Flow_Spigot
+    Water_Flow_Straight: Water_Flow_Straight
+    Water_Pressure_Inlet: Water_Pressure_Inlet
+    Water_Pressure_Socket: Water_Pressure_Socket
+    Water_Pressure_Spigot: Water_Pressure_Spigot
+    Water_Pressure_Straight: Water_Pressure_Straight

@@ -1,0 +1,6 @@
+pyyaml
+plotly
+streamlit
+pandas
+pyperclip
+xlsxwriter

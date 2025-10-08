@@ -1,0 +1,125 @@
+extract:
+  brkdown_database: Breakdown
+  brkdown_table: CCM4_NEW_BREAKDOWN
+  cdc: CCM Date
+  connect: Reports
+  database: Reports
+  last_ccm_date: '2025-09-01 11:11:34'
+  brk_last_data_updated: '2022-01-01 10:10:10'
+  last_sr_no: 0
+  table: CCM4
+identifier: ccm4
+load:
+  brkdown_load_type: full_load
+  brkdown_table: t_ccm4_breakdown
+  last_data_updated: '2022-01-01 10:10:10'
+  load_type: increamental_load
+  table: t_ccm4
+transform:
+  brkdown_rename_columns:
+    Breakdown_Dept: Breakdown_Dept
+    CCM Date: ccm_date
+    End_Time: End_Time
+    OperaintterGroup: shift
+    Start_Time: Start_Time
+  date_transform: 'no'
+  rename: 'yes'
+  rename_columns:
+    ACTUAL_PIPE_WEIGHT: Actual_pipe_weight
+    A_Runner_distance: A_Runner_distance
+    A_mould_powder_rpm: A_mould_powder_rpm
+    B_Runner_distance: B_Runner_distance
+    B_mold_powder_rpm: B_mould_powder_rpm
+    Barrel_rpm: Barrel_rpm
+    Bogie_speed1: Boggi_Speed1
+    Bogie_speed1_position: Boggi_Speed1_Position
+    Bogie_speed2: Boggi_Speed2
+    Bogie_speed2_position: Boggi_Speed2_Position
+    Bogie_speed3: Boggi_Speed3
+    Bogie_speed3_position: Boggi_Speed3_Position
+    Bogie_speed4: Boggi_Speed4
+    Bogie_speed4_position: Boggi_Speed4_Position
+    Bogie_speed5: Boggi_Speed5
+    Bogie_speed5_position: Boggi_Speed5_Position
+    CCM Date: ccm_date
+    CCMBarrel_DownTime: ccm_barrel_down_time
+    CCMUPTIME: ccm_up_time
+    CCM_CycleTime: CCM_CycleTime
+    CastingTime: Casting_time
+    Core_Loader_In: Core_Loader_In
+    Core_Loader_Out: Core_Loader_Out
+    Dia: dia
+    Extractor_Air_Pressure: Extractor_Air_Pressure
+    Extractor_Back_slow_speed: Extractor_Back_slow_speed
+    Extractor_IN_time: Extractor_IN_time
+    Extractor_JAW_close_position: Extractor_JAW_close_position
+    Extractor_JAW_expansion_position: Extractor_JAW_expansion_position
+    Extractor_JAW_expansion_time: Extractor_JAW_expansion_time
+    Extractor_back_high_speed: Extractor_back_high_speed
+    Hopper_speed1: Hopper_speed1
+    Hopper_speed2: Hopper_speed2
+    Hopper_speed3: Hopper_speed3
+    Hopper_speed_time: Hopper_speed_time
+    Hopper_speed_time2: Hopper_Speed2_Time
+    Hopper_speed_time3: Hopper_Speed3_Time
+    INNOCULATION_OFF_POSITION: Innoculation_off_position
+    INNOCULATION_ON_POSITION: Innoculation_on_position
+    INNOCULATION_TAKING_TIME: Innoculation_Taking_Time
+    LEFT_MOLD_POWDER_START_POSITION: L_Mould_Powder_Start_Position
+    LEFT_MOLD_POWDER_START_POSITION_fwd: L_mould_powder_start_position_fwd
+    LEFT_MOLD_POWDER_STOP_POSITION: L_Mould_Powder_Stop_Position
+    LEFT_MOLD_POWDER_STOP_POSITION_fwd: L_mould_powder_stop_position_fwd
+    Ladle_Pyrometer_Temp: Ladle_Pyrometer_Temp
+    METAL_FLOW_TIME_FALL_CHUTE_TO_SOCKET: METAL_FLOW_TIME_FAIL_CHUTE_TO_SOCKET
+    MOLD_POWDER_RUNNING_TIME: Mould_Powder_Running_Time
+    Machine_Energy_Saving: Machine_Energy_Saving
+    Mould Number: Mould_number
+    Mould_Count: Mould_Count
+    NOMINAL_WEIGHT: Pipe_Weight_Nominal
+    OperaintterGroup: Shift
+    PipeClass: Pipe_Class
+    PipeSelectedPerHopper: Pipe_No_Per_Hopper
+    Pipe_Length: Pipe_Length
+    Pipe_With_Auto_socket: Pipe_with_auto_Socket
+    Pipe_lowering_arm_high_speed: Pipe_lowering_arm_high_speed
+    Pipe_lowering_arm_slow_speed: Pipe_lowering_arm_slow_speed
+    RIGHT_MOLD_POWDER_START_POSITION: R_Mould_Powder_Start_Position
+    RIGHT_MOLD_POWDER_START_POSITION_fwd: R_mould_powder_start_position_fwd
+    RIGHT_MOLD_POWDER_STOP_POSITION: R_Mould_Powder_Stop_Position
+    RIGHT_MOLD_POWDER_STOP_POSITION_fwd: R_mould_powder_stop_position_fwd
+    Rotary_High_RPM: Rotary_High_RPM
+    Rotary_slow_RPM: Rotary_slow_RPM
+    Runner_shifting_time: Runner_shifting_time
+    Runner_tilting_time: Runner_tilting_time
+    RunningNOPipe: RunningNOPipe
+    SAP Update: SAP_UPDATE
+    Sleeve Number: Sleeve_Number
+    Slow_rpm: Slow_rpm
+    SocketFillingTime: Socket_Filling_Time
+    Socket_rpm: Socket_rpm
+    Spigot_rpm: Spigot_rpm
+    WaterFlowOFSocket: Water_Flow_Socket
+    WaterFlowOFSpigot: Water_Flow_Spigot
+    WaterFlowOFStraigh: Water_Flow_Straight
+    WaterPressureOFInlet: Water_Pressure_Inlet
+    WaterPressureOFSocket: Water_Pressure_Socket
+    WaterPressureOFSpigot: Water_Pressure_Spigot
+    WaterPressureOFStraight: Water_Pressure_Straight
+    WatetFlowOFInlet: Water_Flow_Inlet
+    ccm down current: ccm_down_current
+    ccm up current: ccm_up_current
+    cooling_rpm: cooling_rpm
+    cooling_time: cooling_time
+    extractor fwd current: Extractor_Forward_Current
+    extractor rev current: Extractor_Backward_Current
+    inlet_water_temp: inlet_water_temp
+    innoculation_rpm: innoculation_rpm
+    ladle_angle: ladle_angle
+    lifter down current: Lifter_down_current
+    lifter up current: lifter_up_current
+    mg treatment no: mg_treatment_no
+    mold rotate current: Mould_Rotate_Current
+    outlet_water_temp: outlet_water_temp
+    pipe_count: Pipe_Number
+    pph: pph
+    water_flow_qty: water_flow_qty

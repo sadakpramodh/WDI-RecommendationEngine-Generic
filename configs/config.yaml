@@ -1,0 +1,39 @@
+time_interval_in_minutes: 60
+
+DIP1:
+  type : ms-sql
+  batch_size: 10000
+  retry_attempts: 3
+  retry_delay: 5
+  connection :
+    host: "0.0.0.0"
+    port: 1442
+    driver: "ODBC Driver 17 for SQL Server"
+    jdbc_driver : "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    user: "abc"
+    password: "abc"
+
+DIP2:
+  type : ms-sql
+  batch_size: 10000
+  retry_attempts: 3
+  retry_delay: 5
+  connection :
+    host: "0.0.0.0"
+    port: 1442
+    driver: "ODBC Driver 17 for SQL Server"
+    jdbc_url : "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    user: "abc"
+    password: "abc"
+
+destination_ds:
+  type : mysql
+  batch_size: 10000
+  retry_attempts: 3
+  retry_delay: 5
+  connection :
+    host: "localhost"
+    port: 3307
+    database: "abc"
+    user: "abc"
+    password: "abc"
